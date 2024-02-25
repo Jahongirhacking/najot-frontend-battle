@@ -1,3 +1,67 @@
-h1 {
-  color: green;
+@import "../../styles/header.scss";
+@import "../../styles/normalize.scss";
+@import "../../styles/colors.scss";
+.app {
+  .design-services {
+    background: $primary-bg-color;
+    padding-bottom: 101px;
+    .container {
+      h1 {
+        color: rgb(255, 255, 255);
+        font-family: Manrope;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-bottom: 36px;
+      }
+    }
+    .design-services-cards {
+      padding-bottom: 99px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      .design-services-card {
+        padding-left: 40px;
+        padding-top: 40px;
+        box-sizing: border-box;
+        border: 1px solid rgb(255, 255, 255);
+        min-width: 406px;
+        height: 509px;
+        position: relative;
+        .card-title {
+          color: rgb(255, 255, 255);
+          font-family: Manrope;
+          font-size: 32px;
+          font-weight: 700;
+          line-height: 40px;
+          letter-spacing: 0%;
+          text-align: left;
+        }
+        .card-content {
+          color: rgb(255, 255, 255);
+          font-family: Manrope;
+          padding-top: 132px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 28px;
+          letter-spacing: 0%;
+          text-align: left;
+          max-width: 305px;
+        }
+        .card-link {
+          position: absolute;
+          bottom: 40px;
+          display: flex;
+          align-items: center;
+          column-gap: 7px;
+          padding: 11px 11px 11px 15px;
+          box-sizing: border-box;
+          border: 1px solid rgb(255, 255, 255);
+          border-radius: 50px;
+        }
+      }
+    }
+  }
 }
