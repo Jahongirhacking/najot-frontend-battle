@@ -52,7 +52,8 @@ ul {
 }
 .header .nav .nav__list {
   display: flex;
-  column-gap: 49px;
+  -moz-column-gap: 49px;
+       column-gap: 49px;
   align-items: center;
   justify-content: space-between;
 }
@@ -60,7 +61,8 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  column-gap: 33px;
+  -moz-column-gap: 33px;
+       column-gap: 33px;
 }
 .header .nav .nav__list .nav__pages .nav__item {
   opacity: 0.3;
@@ -76,7 +78,8 @@ ul {
 }
 .header .nav .nav__list .nav__langs {
   display: flex;
-  column-gap: 9px;
+  -moz-column-gap: 9px;
+       column-gap: 9px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   padding: 6px 10px;
   border-radius: 75px;

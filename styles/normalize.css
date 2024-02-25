@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Monrope";
+  src: url("../assets/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: "Monrope";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-size: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}/*# sourceMappingURL=normalize.css.map */
