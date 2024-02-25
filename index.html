@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Soffit</title>
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      @font-face {
+        font-family: "Monrope";
+        src: url("../assets/fonts/Manrope-VariableFont_wght.ttf")
+          format("truetype");
+      }
+
+      * {
+        font-family: "Monrope", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <div class="app">
@@ -42,6 +53,62 @@
           </div>
         </nav>
       </header>
+      <section class="intro">
+        <header class="hero">
+          <div class="hero__links-container container">
+            <a class="hero__link" href="#"
+              >Bog'lanish <img src="./assets/images/home/arrow.svg"
+            /></a>
+            <a class="hero__link" href="#"
+              >Breif to’ldirish <img src="./assets/images/home/file.svg"
+            /></a>
+          </div>
+        </header>
+        <article class="intro__description-container container">
+          <p class="intro__description">
+            Soff iTga xush kelibsiz. Xizmat ?The main value of the onboarding
+            process needs to serve, is to set initial expectations from the app,
+            and to get the minimum information we need from the user in order to
+            get started. I did this by showing a simple walkthrough and
+          </p>
+          <a class="intro__link" href="#"
+            >Read more <img src="./assets/images/home/arrow.svg"
+          /></a>
+        </article>
+      </section>
+      <!-- Remaining -->
+      <section class="outro">
+        <header class="hero"></header>
+        <article class="outro__description-container container">
+          <p class="outro__description">
+            Modern designs keep users hooked to your application. If the app
+            lags behind the current trends, your users’ interest might start
+            declining and they may look for a better alternative where they get
+            a better experience. For example, users had/have a great demand for
+            the dark
+          </p>
+          <a class="outro__link" href="#"
+            >Read more <img src="./assets/images/home/arrow.svg"
+          /></a>
+        </article>
+      </section>
+      <footer class="footer">
+        <form>
+          <input type="email" name="email" id="email" placeholder="Email-com" />
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone-number"
+          />
+          <input
+            type="text"
+            name="question"
+            id="question"
+            placeholder="Savolingizni yozing"
+          />
+        </form>
+      </footer>
     </div>
   </body>
 </html>
