@@ -30,46 +30,46 @@ ul {
   padding: 0 20px;
 }
 
-.app .header {
+.header {
   background-color: #1d1d1f;
   padding: 45px 0;
 }
-.app .header .header__logo-img {
+.header .header__logo-img {
   width: 106px;
 }
-.app .header .header__logo-img img {
+.header .header__logo-img img {
   width: 100%;
 }
-.app .header .nav {
+.header .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.app .header .nav .nav__list {
+.header .nav .nav__list {
   display: flex;
   column-gap: 49px;
   align-items: center;
   justify-content: space-between;
 }
-.app .header .nav .nav__list .nav__pages {
+.header .nav .nav__list .nav__pages {
   display: flex;
   justify-content: space-around;
   align-items: center;
   column-gap: 33px;
 }
-.app .header .nav .nav__list .nav__pages .nav__item {
+.header .nav .nav__list .nav__pages .nav__item {
   opacity: 0.3;
   transition: opacity 0.4s ease;
   font-size: 16px;
   font-weight: 500;
 }
-.app .header .nav .nav__list .nav__pages .nav__item:hover {
+.header .nav .nav__list .nav__pages .nav__item:hover {
   opacity: 0.7;
 }
-.app .header .nav .nav__list .nav__pages .nav__item.active {
+.header .nav .nav__list .nav__pages .nav__item.active {
   opacity: 1;
 }
-.app .header .nav .nav__list .nav__langs {
+.header .nav .nav__list .nav__langs {
   display: flex;
   column-gap: 9px;
   border: 1px solid rgba(255, 255, 255, 0.6);
@@ -77,16 +77,16 @@ ul {
   border-radius: 75px;
   font-size: 16px;
 }
-.app .header .nav .nav__list .nav__langs .nav__item {
+.header .nav .nav__list .nav__langs .nav__item {
   opacity: 0.3;
   transition: opacity 0.4s ease;
   font-size: 16px;
   font-weight: 500;
 }
-.app .header .nav .nav__list .nav__langs .nav__item:hover {
+.header .nav .nav__list .nav__langs .nav__item:hover {
   opacity: 0.7;
 }
-.app .header .nav .nav__list .nav__langs .nav__item.active {
+.header .nav .nav__list .nav__langs .nav__item.active {
   opacity: 1;
 }
 
