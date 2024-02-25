@@ -1,15 +1,3 @@
-@font-face {
-  font-family: "Monrope";
-  src: url("../assets/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
-}
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  color: #fff;
-  font-family: "Monrope";
-}
-
 a {
   text-decoration: none;
   color: inherit;
