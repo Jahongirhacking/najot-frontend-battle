@@ -1,3 +1,213 @@
+.header {
+  background-color: #1d1d1f;
+  padding: 45px 0;
+}
+.header .header__logo-img {
+  width: 106px;
+}
+.header .header__logo-img img {
+  width: 100%;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav .nav__list {
+  display: flex;
+  column-gap: 49px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .nav .nav__list .nav__pages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 33px;
+}
+.header .nav .nav__list .nav__pages .nav__item {
+  opacity: 0.3;
+  transition: opacity 0.4s ease;
+  font-size: 16px;
+  font-weight: 500;
+}
+.header .nav .nav__list .nav__pages .nav__item:hover {
+  opacity: 0.7;
+}
+.header .nav .nav__list .nav__pages .nav__item.active {
+  opacity: 1;
+}
+.header .nav .nav__list .nav__langs {
+  display: flex;
+  column-gap: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 6px 10px;
+  border-radius: 75px;
+  font-size: 16px;
+}
+.header .nav .nav__list .nav__langs .nav__item {
+  opacity: 0.3;
+  transition: opacity 0.4s ease;
+  font-size: 16px;
+  font-weight: 500;
+}
+.header .nav .nav__list .nav__langs .nav__item:hover {
+  opacity: 0.7;
+}
+.header .nav .nav__list .nav__langs .nav__item.active {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-size: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@font-face {
+  font-family: "Monrope";
+  src: url("../assets/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: "Monrope";
+}
+
 h1 {
-  color: green;
-}/*# sourceMappingURL=style.css.map */
+  color: rgb(255, 255, 255);
+  font-family: Manrope;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-bottom: 36px;
+  padding-top: 20px;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+#portfolio {
+  background-color: black;
+  padding-bottom: 100px;
+}
+#portfolio .main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+@media (max-width: 680px) {
+  #portfolio .main {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2px;
+  }
+}
+#portfolio .main__portfolio__item {
+  position: relative;
+  position: relative;
+}
+#portfolio .main__portfolio__item:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.159);
+}
+#portfolio .main__portfolio__item__img {
+  max-width: 620px;
+  width: 100%;
+}
+#portfolio .main__portfolio__item:hover > .main__portfolio__hover {
+  transition: 1s;
+  opacity: 1;
+}
+#portfolio .main__portfolio__hover {
+  padding: 0 60px;
+  opacity: 0;
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  right: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+  border-radius: 66px;
+  box-shadow: inset -21.67px 21.67px 21.67px 0px rgba(255, 255, 255, 0.1), inset 21.67px -21.67px 21.67px 0px rgba(149, 149, 149, 0.1);
+  backdrop-filter: blur(43.33px);
+  background: rgba(196, 196, 196, 0.1);
+  padding: 16px;
+}
+@media screen and (max-width: 1000px) {
+  #portfolio .main__portfolio__hover {
+    padding: 12px;
+  }
+  #portfolio .main__portfolio__hover p {
+    font-size: 15px;
+  }
+  #portfolio .main__portfolio__hover a {
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 950px) {
+  #portfolio .main__portfolio__hover {
+    padding: 10px;
+  }
+  #portfolio .main__portfolio__hover p {
+    font-size: 12px;
+  }
+  #portfolio .main__portfolio__hover a {
+    font-size: 12px;
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 730px) {
+  #portfolio .main__portfolio__hover {
+    padding: 10px;
+    bottom: 10px;
+  }
+  #portfolio .main__portfolio__hover p {
+    font-size: 11px;
+  }
+  #portfolio .main__portfolio__hover a {
+    padding: 5px 5px;
+    font-size: 11px;
+    gap: 5px;
+  }
+}
+#portfolio .main__portfolio__hover a {
+  border-radius: 50px;
+  border: white 1px solid;
+  padding: 8px 10px;
+  width: 150px;
+}
+#portfolio .main__portfolio__item a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+

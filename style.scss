@@ -1,3 +1,68 @@
 @import "./styles/normalize.scss";
 @import "./styles/colors.scss";
 @import "./styles/header.scss";
+@import "./styles/footer.scss";
+
+$marginLinks: 20px;
+
+.intro,
+.outro {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  margin-bottom: 100px;
+
+  .hero {
+    background-image: url("./assets/images/home/hero-1.jpg");
+    height: 415px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .hero__links-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      transform: translateY(-$marginLinks);
+      column-gap: 30px;
+
+      .hero__link {
+        @include linkStyle();
+
+        &:nth-child(1) {
+          background-color: $special-bg-color;
+        }
+
+        &:nth-child(2) {
+          color: black;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  .intro__description-container,
+  .outro__description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 35px;
+
+    .intro__description,
+    .outro__description {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .intro__link,
+    .outro__link {
+      @include linkStyle();
+      background-color: $special-bg-color;
+    }
+  }
+}
+
+.outro {
+  .hero {
+    background-image: url("./assets/images/home/hero-2.jpg") !important;
+  }
+}

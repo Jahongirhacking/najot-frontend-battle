@@ -1,8 +1,9 @@
 @import "./colors.scss";
 @import "./normalize.scss";
+
 .header {
   background-color: $primary-bg-color;
-  padding: 45px 0;
+  padding: 65px 0;
 
   .header__logo-img {
     width: 106px;
