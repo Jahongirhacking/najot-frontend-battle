@@ -1,5 +1,16 @@
 @import "./colors.scss";
 
+body {
+  background-color: $primary-bg-color;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -16,6 +27,24 @@ ul {
 
 .container {
   max-width: 1280px;
+  width: 98%;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin linkStyle {
+  padding: 10px 15px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
 }
