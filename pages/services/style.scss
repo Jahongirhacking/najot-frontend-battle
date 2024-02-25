@@ -1,7 +1,27 @@
 @import "../../styles/header.scss";
 @import "../../styles/normalize.scss";
 @import "../../styles/colors.scss";
+
 .app {
+  // .swiper-slide {
+  //   width: auto !important;
+  // }
+  .scrollbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    width: 90%;
+    margin: 0 auto;
+    .swiper-scrollbar {
+      background-color: rgba(255, 255, 255, 0.3);
+      // max-width: 540px !important;
+      position: unset;
+      width: 90%;
+    }
+    .swiper-scrollbar-drag {
+      background-color: white;
+    }
+  }
   .design-services {
     background: $primary-bg-color;
     padding-bottom: 101px;
@@ -21,13 +41,14 @@
       padding-bottom: 99px;
       display: flex;
       align-items: center;
-      overflow: hidden;
+      overflow: auto;
+
       .design-services-card {
         padding-left: 40px;
         padding-top: 40px;
         box-sizing: border-box;
         border: 1px solid rgb(255, 255, 255);
-        min-width: 406px;
+        width: 406px;
         height: 509px;
         position: relative;
         .card-title {
@@ -63,5 +84,10 @@
         }
       }
     }
+  }
+}
+@media (max-width: 410px) {
+  .design-services-card {
+    min-width: 320px !important;
   }
 }

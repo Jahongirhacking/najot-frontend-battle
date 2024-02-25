@@ -125,6 +125,21 @@ ul {
   padding: 0 20px;
 }
 
+.app .scrollbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  width: 90%;
+  margin: 0 auto;
+}
+.app .scrollbar-container .swiper-scrollbar {
+  background-color: rgba(255, 255, 255, 0.3);
+  position: unset;
+  width: 90%;
+}
+.app .scrollbar-container .swiper-scrollbar-drag {
+  background-color: white;
+}
 .app .design-services {
   background: #1d1d1f;
   padding-bottom: 101px;
@@ -143,14 +158,14 @@ ul {
   padding-bottom: 99px;
   display: flex;
   align-items: center;
-  overflow: hidden;
+  overflow: auto;
 }
 .app .design-services .design-services-cards .design-services-card {
   padding-left: 40px;
   padding-top: 40px;
   box-sizing: border-box;
   border: 1px solid rgb(255, 255, 255);
-  min-width: 406px;
+  width: 406px;
   height: 509px;
   position: relative;
 }
@@ -185,4 +200,10 @@ ul {
   box-sizing: border-box;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 50px;
+}
+
+@media (max-width: 410px) {
+  .design-services-card {
+    min-width: 320px !important;
+  }
 }/*# sourceMappingURL=style.css.map */
