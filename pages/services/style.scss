@@ -1,11 +1,9 @@
 @import "../../styles/header.scss";
 @import "../../styles/normalize.scss";
 @import "../../styles/colors.scss";
+@import "../../styles/footer.scss";
 
 .app {
-  // .swiper-slide {
-  //   width: auto !important;
-  // }
   .scrollbar-container {
     display: flex;
     align-items: center;
@@ -28,7 +26,6 @@
     .container {
       h1 {
         color: rgb(255, 255, 255);
-        font-family: Manrope;
         font-size: 35px;
         font-weight: 700;
         line-height: 48px;
@@ -53,7 +50,6 @@
         position: relative;
         .card-title {
           color: rgb(255, 255, 255);
-          font-family: Manrope;
           font-size: 32px;
           font-weight: 700;
           line-height: 40px;
@@ -62,7 +58,6 @@
         }
         .card-content {
           color: rgb(255, 255, 255);
-          font-family: Manrope;
           padding-top: 132px;
           font-size: 16px;
           font-weight: 500;

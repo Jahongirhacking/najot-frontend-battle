@@ -9,6 +9,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <style>
+      @font-face {
+        font-family: "Monrope";
+        src: url("../assets/fonts/Manrope-VariableFont_wght.ttf")
+          format("truetype");
+      }
+
+      * {
+        font-family: "Monrope", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <div class="app">
@@ -314,22 +325,83 @@
                 </a>
               </div>
             </div>
-            <!-- Slides -->
-
-            <!-- If we need pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
-
-            <!-- If we need navigation buttons -->
-            <!-- <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> -->
-
-            <!-- If we need scrollbar -->
             <div class="scrollbar-container">
               <div class="swiper-scrollbar"></div>
             </div>
           </div>
         </div>
       </section>
+      <footer class="footer container">
+        <form class="footer__form">
+          <label>Savollar bo’lsa jo’natishingiz mumkun</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email-com"
+            autocomplete="off"
+          />
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone-number"
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            name="question"
+            id="question"
+            placeholder="Savolingizni yozing"
+            autocomplete="off"
+          />
+          <button class="form__submit-btn">
+            Jo’natish <img src="../../assets/images/home/arrow.svg" />
+          </button>
+        </form>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <span class="list__head">Services</span>
+            <ul>
+              <li><a href="#">Web design</a></li>
+              <li><a href="#">App design</a></li>
+              <li><a href="#">Frontend</a></li>
+            </ul>
+          </li>
+          <li class="footer__list-item">
+            <span class="list__head">Portfolio</span>
+            <ul>
+              <li><a href="#">iMan invest</a></li>
+              <li><a href="#">Izma crm</a></li>
+              <li><a href="#">Airbnb</a></li>
+            </ul>
+          </li>
+          <li class="footer__list-item">
+            <span class="list__head">About us</span>
+            <ul>
+              <li><a href="#">Nimadir</a></li>
+              <li><a href="#">Bla bla bla</a></li>
+              <li><a href="#">Togga go</a></li>
+            </ul>
+          </li>
+          <li class="footer__list-item">
+            <span class="list__head">Contac us</span>
+            <ul>
+              <li><a href="#">Mirzo ulugbek nimadir nimadir rayon 7 uy</a></li>
+              <li><a href="tel:+998990300039">+998 99 030 00 39</a></li>
+            </ul>
+          </li>
+          <li class="footer__list-item">
+            <span class="list__head">Label</span>
+            <ul>
+              <li><a href="#">Telegram</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ul>
+          </li>
+        </ul>
+        <span class="author">2022 Naturality Digital. All rights reseved</span>
+      </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

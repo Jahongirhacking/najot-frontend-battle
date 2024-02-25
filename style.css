@@ -35,6 +35,43 @@ ul {
   flex-direction: column;
 }
 
+body {
+  background-color: #1d1d1f;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-size: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1280px;
+  width: 98%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   background-color: #1d1d1f;
   padding: 65px 0;
@@ -107,6 +144,7 @@ body {
   padding: 0;
   margin: 0;
   color: #fff;
+}
 
 a {
   text-decoration: none;
@@ -137,7 +175,8 @@ ul {
 .footer {
   padding-bottom: 72px;
   display: flex;
-  column-gap: 101px;
+  -moz-column-gap: 101px;
+       column-gap: 101px;
   row-gap: 52px;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -176,6 +215,10 @@ ul {
   padding: 9px 20px;
   width: 100%;
 }
+.footer .footer__form input::-moz-placeholder {
+  color: #fff;
+  opacity: 0.3;
+}
 .footer .footer__form input::placeholder {
   color: #fff;
   opacity: 0.3;
@@ -186,7 +229,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 5px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
   font-weight: 600;
   font-size: 16px;
   border: none;
@@ -194,7 +238,8 @@ ul {
 }
 .footer .footer__list {
   display: flex;
-  column-gap: 68px;
+  -moz-column-gap: 68px;
+       column-gap: 68px;
   row-gap: 60px;
   flex-wrap: wrap;
 }
@@ -247,7 +292,8 @@ ul {
   align-items: center;
   justify-content: flex-start;
   transform: translateY(-20px);
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 .intro .hero .hero__links-container .hero__link,
 .outro .hero .hero__links-container .hero__link {
@@ -256,7 +302,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 5px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
   font-weight: 600;
   font-size: 16px;
   border: none;
@@ -303,7 +350,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 5px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
   font-weight: 600;
   font-size: 16px;
   border: none;
@@ -312,7 +360,4 @@ ul {
 
 .outro .hero {
   background-image: url("./assets/images/home/hero-2.jpg") !important;
-
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
